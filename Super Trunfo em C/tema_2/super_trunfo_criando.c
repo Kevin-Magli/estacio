@@ -16,6 +16,7 @@ int main(){
     
     printf("\nQual é o codigo da carta? (ex: 01) -> ");
     scanf("%s", &codigo1);
+    // sprintf funciona como o printf, mas em vez de exibir no console, ele "imprime" o resultado formatado dentro de uma variável (string). Aqui estamos juntando a letra do estado com o número da carta.
     sprintf(codigo_estado1, "%c%s", estado1, codigo1);
 
     printf("\nQual é o nome da cidade? -> ");
